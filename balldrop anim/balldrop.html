@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>balldrop animation</title>
+    <style type="text/css">
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background: beige;
+        }
+
+        .ball {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: grey;
+            border-radius: 50%;
+            animation: drop 1s ease-in-out infinite alternate;
+
+        }
+
+        .shadow {
+            margin-top: 150px;
+            width: 350px;
+            height: 30px;
+            border-radius: 50%;
+            background: lightgrey;
+            animation: shadow 1s ease-in-out infinite alternate
+        }
+
+        @keyframes drop {
+            from {
+                top: 300px;
+
+            }
+
+            to {
+                top: 0px;
+            }
+
+        }
+
+        @keyframes shadow {
+            from {
+                width: 200px;
+                filter: blur(10px);
+
+            }
+
+            to {
+                width: 400px;
+                filter: blur(5px)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball"></div>
+    <div class="shadow"></div>
+
+</body>
+
+</html>
