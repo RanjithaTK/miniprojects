@@ -1,0 +1,12 @@
+.progress {
+    width:200px;
+    height:12px;
+    border-radius: 6px;
+    background-color: aqua;
+}
+.progress > div {
+    height: 100%;
+    border-radius: 6px;
+    background-color: bisque;
+    transition: width 200ms;
+}
